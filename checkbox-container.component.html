@@ -1,0 +1,8 @@
+<div class="form-group m-0">
+  <label for="checkbox-{{name}}" (click)="setValue(chkbox.checked)" class="m-0 form-label" style="height:42px;">
+    <input type="checkbox" [name]="name" id="checkbox-{{name}}" #chkbox class="d-none" />
+    <i *ngIf="!switchType" class="far" [class.fa-check-square]="value" [class.cor-padrao]="value" [class.fa-square]="!value"></i>
+    <i *ngIf="switchType" class="fas fa-toggle-on" [class.cor-padrao]="value" [class.inverse]="!value" ></i>
+    <span>{{label}}</span>
+  </label>
+</div>
